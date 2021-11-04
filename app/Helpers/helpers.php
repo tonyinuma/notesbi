@@ -10,12 +10,12 @@ class Helper
         // default data value
         $dataDefault = [
           'mainLayoutType' => 'vertical-menu',
-          'theme' => 'light',
+          'theme' => 'dark',
           'isContentSidebar'=> false,
           'pageHeader' => false,
           'bodyCustomClass' => '',
           'navbarBgColor' => 'bg-white',
-          'navbarType' => 'fixed',          
+          'navbarType' => 'fixed',
           'isMenuCollapsed' => false,
           'footerType' => 'static',
           'templateTitle' => '',
@@ -25,10 +25,10 @@ class Helper
           'defaultLanguage' => 'en',
           'direction' => env('MIX_CONTENT_DIRECTION', 'ltr'),
         ];
-        
+
         //if any key missing of array from custom.php file it will be merge and set a default value from dataDefault array and store in data variable
         $data = array_merge($dataDefault, config('custom.custom'));
-        
+
         // all available option of materialize template
         $allOptions = [
           'mainLayoutType' => array('vertical-menu','horizontal-menu','vertical-menu-boxicons'),
@@ -37,7 +37,7 @@ class Helper
           'pageHeader' => array(false,true),
           'bodyCustomClass' => '',
           'navbarBgColor' => array('bg-white','bg-primary', 'bg-success','bg-danger','bg-info','bg-warning','bg-dark'),
-          'navbarType' => array('fixed'=>'fixed','static'=>'static','hidden'=>'hidden'),          
+          'navbarType' => array('fixed'=>'fixed','static'=>'static','hidden'=>'hidden'),
           'isMenuCollapsed' => array(false,true),
           'footerType' => array('fixed'=>'fixed','static'=>'static','hidden'=>'hidden'),
           'templateTitle' => '',
@@ -76,7 +76,7 @@ class Helper
           if (gettype($data[$key]) === gettype($dataDefault[$key])) {
             if (is_string($data[$key])) {
               if(is_array($value)){
-                
+
                 $result = array_search($data[$key], $value);
                 if (empty($result)) {
                   $data[$key] = $dataDefault[$key];
@@ -103,7 +103,7 @@ class Helper
           'bodyCustomClass' => $data['bodyCustomClass'],
           'navbarBgColor' => $data['navbarBgColor'],
           'navbarType' => $navbarBodyClass[$data['navbarType']],
-          'navbarClass' => $navbarClass[$data['navbarType']],          
+          'navbarClass' => $navbarClass[$data['navbarType']],
           'isMenuCollapsed' => $data['isMenuCollapsed'],
           'footerType' => $footerBodyClass[$data['footerType']],
           'footerClass' => $footerClass[$data['footerType']],
@@ -127,7 +127,7 @@ class Helper
     {
         $demo = 'custom';
         $custom = 'custom';
-  
+
         if (isset($pageConfigs)) {
             if (count($pageConfigs) > 0) {
                 foreach ($pageConfigs as $config => $val) {
