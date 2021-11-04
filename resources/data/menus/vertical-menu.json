@@ -1,0 +1,25 @@
+{
+    "menu": [
+        {
+            "navheader": "Módulos"
+        },
+        {
+            "url": "app-notes",
+            "name": "Todo",
+            "i18n": "Todo",
+            "icon": "check-alt"
+        },
+        {
+            "url": "app-email",
+            "name": "Email",
+            "i18n": "Email",
+            "icon": "envelope-pull"
+        },
+        {
+            "url": "app-chat",
+            "name": "Chat",
+            "i18n": "Chat",
+            "icon": "comments"
+        }
+    ]
+}
