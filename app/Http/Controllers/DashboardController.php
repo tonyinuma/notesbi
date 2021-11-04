@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
-class StarterKitController extends Controller
+class DashboardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('pages.dashboard-ecommerce');

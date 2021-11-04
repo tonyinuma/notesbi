@@ -14,5 +14,5 @@ use App\Http\Controllers\LanguageController;
 
 Auth::routes();
 
-Route::get('/','StarterKitController@index')->middleware('auth');
+Route::get('/','DashboardController@index');
 //Route::get('/app-notes','ApplicationController@todoApplication');
