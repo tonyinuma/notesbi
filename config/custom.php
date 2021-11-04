@@ -3,7 +3,7 @@
 return [
     'custom' => [
         'mainLayoutType' => 'vertical-menu', //Options:vertical-menu,horizontal-menu,vertical-menu-boxicons, default(vertical-menu)
-        'theme' => 'light',  //light(default),dark,semi-dark (note: Horizontal-menu not applicable for semi-dark)
+        'theme' => 'dark',  //light(default),dark,semi-dark (note: Horizontal-menu not applicable for semi-dark)
         'isContentSidebar' => false,  // Options: True and false(default) (There are ttwo page layout with content-sidebar and without sidebar)
         'pageHeader' => false, //options:Boolean: false(default), true (Page Header for Breadcrumbs) Warning:if pageheader true need to define a breadcrums in controller
         'bodyCustomClass' => '', //any custom class can be pass
