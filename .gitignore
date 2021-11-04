@@ -7,6 +7,7 @@
 /public/fonts
 /public/images
 /public/js
+/public/mix-manifest.json
 /public/vendors
 /storage/*.key
 /vendor
