@@ -37,4 +37,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function showLoginForm()
+    {
+        $pageConfigs = ['bodyCustomClass' => 'bg-full-screen-image'];
+        return view('auth.login', [
+            'pageConfigs' => $pageConfigs
+        ]);
+    }
 }

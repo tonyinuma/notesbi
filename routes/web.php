@@ -17,6 +17,4 @@ Auth::routes();
 Route::get('/','StarterKitController@index');
 //Route::get('/app-notes','ApplicationController@todoApplication');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
