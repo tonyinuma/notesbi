@@ -15,4 +15,10 @@ use App\Http\Controllers\LanguageController;
 Auth::routes();
 
 Route::get('/','DashboardController@index');
+
+Route::get('/app-cards','CardsController@index');
+Route::get('/generate-card','CardsController@generateBingoCard')->name('generate-card');
+
+Route::get('/app-bingo','CardsController@indexBingo');
+Route::get('/bingo-number','CardsController@getBingoNumber')->name('bingo-number');
 //Route::get('/app-notes','ApplicationController@todoApplication');

@@ -4,15 +4,15 @@
             "navheader": "Módulos"
         },
         {
-            "url": "app-notes",
-            "name": "Todo",
-            "i18n": "Todo",
+            "url": "app-bingo",
+            "name": "Bingo",
+            "i18n": "Bingo",
             "icon": "check-alt"
         },
         {
-            "url": "app-email",
-            "name": "Email",
-            "i18n": "Email",
+            "url": "app-cards",
+            "name": "Cards",
+            "i18n": "Cards",
             "icon": "envelope-pull"
         },
         {

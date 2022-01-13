@@ -1,6 +1,8 @@
 <?php
 return [
   "Dashboard" => "Dashboard",
+  "Bingo" => "Bingo",
+  "Cards" => "Cards",
   "eCommerce" => "eCommerce",
   "Analytics" => "Analytics",
   "Apps" => "Apps",
